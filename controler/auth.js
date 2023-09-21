@@ -7,7 +7,7 @@ const { UserModel } = require("../modal/authModal");
 const dotenv = require("dotenv");
 dotenv.config();
 const authRouter = express.Router();
-const SCRET_KEY_TOKEN = process.env.TOKEN_SCRET_KEY
+const SCRET_KEY_TOKEN = process.env.TOKEN_SECRET_KEY 
 authRouter.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
 
